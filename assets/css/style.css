@@ -2,6 +2,21 @@
 /* ===============================
 Top Page
 =============================== */
-
+.breadcrumb{
+    display: flex;
+    font-family: 'Noto Sans JP';
+    font-size:  12px;
+    font-weight: 500;
+}
+.top{
+    color: #003E90;
+}
+/* .divider {
+   background: url(../img/Line\ 371.png);   
+} */
+.top-flex{
+    display: flex;
+    justify-content: space-between;
+}
 @media screen and (max-width: 768px) {
 }
