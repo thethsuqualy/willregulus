@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /* ===============================
 Top Page
 =============================== */
@@ -8,9 +9,11 @@ Top Page
   font-size: 12px;
   font-weight: 500;
 }
+
 .top {
   color: #003e90;
 }
+
 /* .divider {
    background: url(../img/Line\ 371.png);   
 } */
@@ -18,17 +21,20 @@ Top Page
   display: flex;
   justify-content: space-between;
 }
+
 /* footer section*/
 .footer-logo {
   width: 300px;
   height: 48px;
 }
+
 .tax {
   font-family: "Noto Sans JP";
   font-size: 16px;
   font-weight: 500;
   padding-top: 10px;
 }
+
 .footer-willregulus {
   display: flex;
   align-items: center;
@@ -42,13 +48,17 @@ Top Page
   font-weight: 500;
   padding-bottom: 8px;
 }
+
 .address-tele {
   font-family: "Noto Sans JP";
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   padding-left: 15px;
+  display: flex;
+  flex-direction: column;
 }
+
 .office::before {
   content: " ";
   display: inline-block;
@@ -58,6 +68,7 @@ Top Page
   margin-right: 8px;
   margin-bottom: 3px;
 }
+
 .footer-willregulus-wrapper {
   padding-left: 52px;
   border-top: 2px solid #003e90;
@@ -65,10 +76,12 @@ Top Page
   width: 100%;
   margin: 0 auto;
 }
+
 .office-contact {
   display: flex;
   margin-top: 32px;
 }
+
 .policy {
   position: relative;
   padding-left: 13px;
@@ -92,6 +105,7 @@ Top Page
   top: 50%;
   transform: translateY(-50%);
 }
+
 .copyright {
   font-family: "Noto Sans JP";
   font-size: 10px;
@@ -103,16 +117,24 @@ Top Page
   text-align: center;
   padding: 18px 0px 19px;
 }
+
 @media screen and (max-width: 768px) {
   .footer-willregulus-wrapper {
     padding-left: 16px;
   }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+  }
 }
+
 @media screen and (max-width: 617px) {
   .office-contact {
     flex-direction: column;
     gap: 15px;
   }
+
   .policy {
     margin-top: 29px;
     margin-bottom: 20px;
