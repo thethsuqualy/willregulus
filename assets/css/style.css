@@ -7,7 +7,7 @@ Top Page
   font-family: "Noto Sans JP";
   color: #1d1d1d;
   position: relative;
-  padding-left: 312px;
+  padding-left: 272px;
 }
 .will-body {
   max-width: 1480px;
@@ -34,7 +34,6 @@ Top Page
 }
 .right-content {
   max-width: 1168px;
-  /* margin: 0 auto; */
 }
 .inner-right-content {
   max-width: 1104px;
@@ -172,6 +171,24 @@ Top Page
   justify-content: center;
   align-items: center;
 }
+
+.sidebar {
+  width: 272px;
+  height: 900px;
+  padding: 16px 0px 0 56px;
+  position: absolute;
+}
+.nav-menu {
+  font-family: "Noto Sans JP";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 40px 0 32px 0;
+}
+.header-logo {
+  width: 146px;
+  height: 149px;
+}
 .logo-text {
   font-family: "Noto Sans JP";
   font-size: 13px;
@@ -211,26 +228,10 @@ Top Page
 .submenu li {
   padding-left: 15px;
 }
-.nav-menu {
-  font-family: "Noto Sans JP";
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.4;
-  margin: 40px 0 32px 0;
-}
-.sidebar {
-  width: 272px;
-  height: 900px;
-  padding: 16px 0px 0 56px;
-  position: absolute;
-}
 .logo-textgroup {
   padding-left: 32px;
 }
-.header-logo {
-  width: 146px;
-  height: 149px;
-}
+
 .sidebar-contact {
   width: 120px;
   height: 120px;
@@ -241,6 +242,42 @@ Top Page
   justify-content: center;
   color: #ffffff;
   margin-bottom: 106px;
+}
+.hamburger span {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  width: 25px;
+  height: 3px;
+  background: #003e90;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+@media screen and (max-width: 1060px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-contact {
+    display: none;
+  }
+  .nav-menu.active {
+    display: block;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .hamburger.toggle span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .hamburger.toggle span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.toggle span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
 }
 @media screen and (max-width: 768px) {
   .img-flex-sp {
