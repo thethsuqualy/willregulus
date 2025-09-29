@@ -204,3 +204,134 @@ Top Page
     height: 119px;
 }
 }
+/* footer section*/
+.footer-logo {
+  width: 300px;
+  height: 48px;
+}
+
+.tax {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.footer-willregulus {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 40px;
+}
+
+.office {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+
+.address-tele {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.office::before {
+  content: " ";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #5117d8;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.footer-willregulus-wrapper {
+  padding-left: 52px;
+  border-top: 2px solid #003e90;
+  max-width: 1168px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.office-contact {
+  display: flex;
+  gap: 30px;
+  margin-top: 32px;
+}
+
+.policy {
+  position: relative;
+  padding-left: 13px;
+  font-family: "Noto Sans JP";
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 32px;
+  margin-bottom: 21px;
+}
+
+.policy::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 8px;
+  background-image: url("/assets/img/trianglefooter.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.copyright {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  max-width: 1168px;
+  height: 54px;
+  color: white;
+  background-color: #003e90;
+  text-align: center;
+  padding: 18px 0px 19px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-willregulus-wrapper {
+    padding-left: 16px;
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-logo {
+    width: 227px;
+    height: 36px;
+  }
+  .office-contact {
+    margin-top: 25px;
+}
+.office {
+    padding-bottom: 4px;
+}
+
+}
+
+@media screen and (max-width: 617px) {
+  .office-contact {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .policy {
+    margin-top: 29px;
+    margin-bottom: 20px;
+  }
+}
+
