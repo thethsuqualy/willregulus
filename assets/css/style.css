@@ -5,6 +5,13 @@ Top Page
 .content-section {
   font-family: "Noto Sans JP";
   color: #1d1d1d;
+  position: relative;
+  padding-left: 312px;
+}
+.will-body{
+  max-width: 1480px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 .blue-wave-pc{
     margin-bottom: 60px;
@@ -26,7 +33,7 @@ Top Page
 }
 .right-content {
   max-width: 1168px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 .inner-right-content {
   max-width: 1104px;
@@ -176,11 +183,7 @@ Top Page
   font-weight: 500;
   line-height: 1.7;
 }
-.logo-textgroup{
-  width: 200px;
-  margin: 0 auto;
-  text-align: center;
-}
+
 .menu::before{
   content: "";
   display: inline-block;
@@ -215,10 +218,18 @@ Top Page
   margin: 40px 0 32px 0;
 }
 .sidebar{
-  width: 312px;
+  width: 272px;
   height: 900px;
-  padding: 16px 20px 0 56px;
+  padding: 16px 0px 0 56px;
+  position: absolute;
 
+}
+.logo-textgroup{
+  padding-left: 32px;
+}
+.header-logo{
+  width: 146px;
+  height: 149px;
 }
 .sidebar-contact{
   width: 120px;
